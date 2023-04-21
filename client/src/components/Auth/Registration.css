@@ -1,0 +1,83 @@
+.Registration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 200vh;
+  font-family: Arial, sans-serif;
+}
+
+.regForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: auto;
+  background-color: white;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.hForm {
+  font-size: 32px;
+  margin: 0;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.inputForm {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+}
+
+.inputForm:focus {
+  border-color: #ccc;
+}
+
+.buttonForm {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 4px;
+  background-color: #fb9773;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.buttonForm:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.divForm {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: red;
+}
+
+.blockButton {
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.authButton {
+  display: flex;
+  border: none;
+  background-color: white;
+  font-size: 16px;
+  color: gray;
+  cursor: pointer;
+}

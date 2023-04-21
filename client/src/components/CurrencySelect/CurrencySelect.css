@@ -1,0 +1,33 @@
+select {
+  font-size: 1rem;
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  color: #444;
+  width: 75px;
+  max-width: 20rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease-in-out;
+}
+
+/* Style for the select element when it's in focus */
+select:focus {
+  outline: none;
+  border-color: #4d90fe;
+}
+
+/* Style for the arrow icon */
+select::-ms-expand {
+  display: none;
+}
+
+select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  transform: translateY(-50%);
+  color: #444;
+  pointer-events: none;
+}

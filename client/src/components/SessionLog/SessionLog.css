@@ -1,0 +1,25 @@
+.transactions {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.log-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.log-item .currency {
+  font-weight: normal;
+}
+
+.log-item .label {
+  font-weight: bold;
+  margin-right: 10px;
+}

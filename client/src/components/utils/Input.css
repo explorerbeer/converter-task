@@ -1,0 +1,8 @@
+.input_component {
+  width: 170px;
+  height: 20px;
+  margin-bottom: 15px;
+  padding: 5px 10px 5px 2px;
+  padding-left: 10px;
+  text-align: left;
+}

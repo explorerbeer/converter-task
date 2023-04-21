@@ -1,0 +1,18 @@
+.CurrencyTable {
+  display: flex;
+  justify-content: center;
+  align-self: stretch;
+  margin-bottom: 10px;
+}
+
+.table-etc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.date-and-exchange {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}

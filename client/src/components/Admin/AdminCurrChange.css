@@ -1,0 +1,49 @@
+.CurrChange {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.45);
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.EditHeader {
+  display: flex;
+  justify-content: center;
+}
+
+.UpdateCurrButton {
+  display: flex;
+  background-color: #fb9773;
+  justify-content: center;
+  align-items: center;
+  width: 105px;
+  height: 35px;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: gray;
+  box-shadow: none;
+  border-style: solid;
+  font-size: 16px;
+  text-align: center;
+  margin-right: 15px;
+}
+
+.UpdateCurrButton:hover {
+  background-color: #f77c57;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.UpdateCurrButton:active {
+  background-color: #f45c31;
+  box-shadow: none;
+}
+
+.SaveBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
