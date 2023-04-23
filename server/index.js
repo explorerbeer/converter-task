@@ -5,8 +5,8 @@ const dotenv = require('dotenv');
 const cron = require('node-cron');
 const route = require('./routes');
 const getAllActualDataFromAPI = require('./services/nbrb.service');
-dotenv.config();
 const cors = require('cors');
+dotenv.config();
 
 const ConverterDatabase = require('./infrastructure/requests');
 const orm = new ConverterDatabase();
