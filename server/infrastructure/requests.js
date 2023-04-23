@@ -23,7 +23,7 @@ class ConverterDatabase {
       FROM currencies c JOIN exchange_rates e ON c.id = e.currency_id 
       WHERE e.created_at = $1
        ORDER BY fullname ASC, shortname ASC`,
-      [`${date.split('T')[0]} 00:00:00`]
+      [`${date.split('T')[0]} 00:00:00+03`]
     );
     return data.rows;
   }
