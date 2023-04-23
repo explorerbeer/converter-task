@@ -3,7 +3,6 @@ const ConverterDatabase = require('./infrastructure/requests');
 
 const orm = new ConverterDatabase();
 const app = express();
-const koef = 0.975;
 
 //регистрация пользователя
 app.post('/registration', async (req, res, next) => {
