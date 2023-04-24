@@ -75,6 +75,11 @@ class ConverterDatabase {
         );
       });
     } else {
+      const date = new Date();
+      date.setHours(0);
+      date.setMinutes(0);
+      date.setSeconds(0);
+      date.setMilliseconds(0);
       rates.map(async (el) => {
         const uplRates = await pool.query(
           `INSERT INTO exchange_rates(currency_id, editor_id, currency_price, currency_scale, edited_at, created_at) 
@@ -95,7 +100,7 @@ class ConverterDatabase {
       await pool.query(
         `INSERT INTO exchange_rates(currency_id, editor_id, currency_price, currency_scale, edited_at, created_at) 
         VALUES($1, $2, $3, $4, $5, $6)`,
-        [bel_id.rows[0].id, 1, 1, 1, null, new Date()]
+        [bel_id.rows[0].id, 1, 1, 1, null, date]
       );
     }
   }
