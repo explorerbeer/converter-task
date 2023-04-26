@@ -116,7 +116,7 @@ const Login = () => {
           name="Пароль"
           type="password"
           placeholder="Введите пароль..."
-          autocomplete="off"
+          autoComplete="off"
         ></input>
         <button
           className="buttonForm"
