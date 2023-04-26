@@ -102,6 +102,7 @@ const Login = () => {
           type="text"
           placeholder="Введите имя пользователя..."
           maxLength={16}
+          autocomplete="off"
         ></input>
         {passwordDirty && (
           <div className="divForm">{passwordError}</div>
@@ -115,6 +116,7 @@ const Login = () => {
           name="Пароль"
           type="password"
           placeholder="Введите пароль..."
+          autocomplete="off"
         ></input>
         <button
           className="buttonForm"
