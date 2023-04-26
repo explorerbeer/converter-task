@@ -53,10 +53,10 @@ const Registration = () => {
 
   const loginHandler = (e) => {
     setLogin(e.target.value);
-    const regex = /^[a-zA-Z0-9]+$/;
+    const regex = /^[a-zA-Z0-9_\\-]+$/;
     if (!regex.test(String(e.target.value))) {
       setLoginError(
-        'Некорректный логин! Разрешены символы формата a-zA-z0-9'
+        'Некорректный логин! Разрешены символы формата a-zA-z0-9_-.'
       );
     } else {
       setLoginError('');
